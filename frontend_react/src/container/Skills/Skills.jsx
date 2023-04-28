@@ -49,52 +49,50 @@ const Skills = () => {
         </motion.div>
         <div className="app__skills-exp">
           {experiences?.map((experience) => (
-            // <Tooltip
-            //   componentsProps={{
-            //     tooltip: {
-            //       sx: {
-            //         backgroundColor: "#fff",
-            //         color: "#000",
-            //         fontSize: "1rem",
-            //         fontWeight: "500",
-            //         border: "1px solid #cfc7c7",
-            //         minWidth: "450px",
-            //       },
-            //     },
-            //     arrow: {
-            //       sx: {
-            //         color: "#cfc7c7",
-            //       },
-            //     },
-            //   }}
-            //   id={experience?.name}
-            //   title={experience?.desc}
-            //   arrow
-            // >
-            <motion.div className="app__skills-exp-item">
-              <div className="app__skills-exp-year">
-                <img
-                  style={{ width: "100px", marginTop: "10px" }}
-                  src={urlFor(experience?.image)}
-                  alt="img"
-                />
-              </div>
-              <motion.div className="app__skills-exp-works">
-                <motion.div
-                  whileInView={{ opacity: [0, 1] }}
-                  transition={{ duration: 0.5 }}
-                  className="app__skills-exp-work"
-                  data-tip
-                  data-for={experience?.name}
-                >
-                  <h4 className="bold-text">{experience?.name}</h4>
-                  <p className="bold-text">{experience?.time} </p>
-
-                  {/* <ul style={{ marginTop: "10px" }}>{experience?.desc}</ul> */}
+            <Tooltip
+              componentsProps={{
+                tooltip: {
+                  sx: {
+                    backgroundColor: "#fff",
+                    color: "#000",
+                    fontSize: "1rem",
+                    fontWeight: "500",
+                    border: "1px solid #cfc7c7",
+                    minWidth: "450px",
+                  },
+                },
+                arrow: {
+                  sx: {
+                    color: "#cfc7c7",
+                  },
+                },
+              }}
+              id={experience?.name}
+              title={experience?.desc}
+              arrow
+            >
+              <motion.div className="app__skills-exp-item">
+                <div className="app__skills-exp-year">
+                  <img
+                    style={{ width: "100px", marginTop: "10px" }}
+                    src={urlFor(experience?.image)}
+                    alt="img"
+                  />
+                </div>
+                <motion.div className="app__skills-exp-works">
+                  <motion.div
+                    whileInView={{ opacity: [0, 1] }}
+                    transition={{ duration: 0.5 }}
+                    className="app__skills-exp-work"
+                    data-tip
+                    data-for={experience?.name}
+                  >
+                    <h4 className="bold-text">{experience?.name}</h4>
+                    <p className="bold-text">{experience?.time} </p>
+                  </motion.div>
                 </motion.div>
               </motion.div>
-            </motion.div>
-            // </Tooltip>
+            </Tooltip>
           ))}
         </div>
       </div>
