@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
-import Tooltip from "@mui/material/Tooltip";
 import { urlFor, client } from "../../client";
+import Tooltip from "@mui/material/Tooltip";
 import "./Skills.scss";
 
 const Skills = () => {
@@ -12,8 +12,6 @@ const Skills = () => {
   useEffect(() => {
     const query = '*[_type == "workExperience"]';
     const skillsQuery = '*[_type == "skills"]';
-    console.log("skills", skills);
-
     client.fetch(query).then((data) => {
       setExperiences(data);
     });
