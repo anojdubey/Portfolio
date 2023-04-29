@@ -11,16 +11,7 @@ const App = () => {
       <Work />
       <Skills />
       <Footer />
-      <div
-        style={{
-          position: "fixed",
-          bottom: "2rem",
-          right: "3rem",
-          zIndex: 1000,
-        }}
-      >
-        <SocialMedia />
-      </div>
+      <SocialMedia />
     </div>
   );
 };

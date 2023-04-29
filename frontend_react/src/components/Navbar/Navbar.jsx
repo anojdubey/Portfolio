@@ -106,7 +106,7 @@ const Navbar = () => {
               <ul className="navbarSocial">
                 <li>
                   <a
-                    href="https://github.com/Dheeraj-Bhandari"
+                    href="https://github.com/anojdubey"
                     target={"_blank"}
                     rel="noreferrer"
                   >
@@ -114,32 +114,11 @@ const Navbar = () => {
                     <BsGithub />
                   </a>
                   <a
-                    href="https://leetcode.com/Dheeraj-bhandari/"
-                    target={"_blank"}
-                    rel="noreferrer"
-                  >
-                    <BsCodeSlash />
-                  </a>
-                  <a
-                    href="https://www.youtube.com/channel/UChXHt9pHik0rR0iZDOHNdsg"
-                    target={"_blank"}
-                    rel="noreferrer"
-                  >
-                    <BsYoutube />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/digitaldk/"
+                    href="https://www.linkedin.com/in/anoj-dubey-66293021b"
                     target={"_blank"}
                     rel="noreferrer"
                   >
                     <BsLinkedin />
-                  </a>
-                  <a
-                    href="https://digitaldk-in.medium.com/"
-                    target={"_blank"}
-                    rel="noreferrer"
-                  >
-                    <BsMedium />
                   </a>
                 </li>
               </ul>
