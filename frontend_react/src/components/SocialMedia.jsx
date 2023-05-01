@@ -43,7 +43,7 @@ const SocialMedia = () => {
       </div>
       <div>
         <a
-          href="https://digitaldk-in.medium.com/"
+          href="https://drive.google.com/file/d/1xG2V2v7pXeuverwvqK4k-nIGuh-AS0Zz/view?usp=sharing"
           target={"_blank"}
           rel="noreferrer"
         >
